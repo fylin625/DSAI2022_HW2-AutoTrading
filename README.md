@@ -10,10 +10,28 @@
 * 說明：資料中依序包含 IBM 5年的開盤、最高、最低、收盤（open、high、low、close）。
 
 ## Method & Training
+### Data Selection
+我們分別利用 open、high、low、close訓練出LSTM模型(一層)，最終依據結果選擇了close做為訓練的資料。
 
-我們選擇了close做為訓練的資料，並挑選了經常用來訓練時間序列的模型LSTM來做為此次訓練的模型。
+open：
 
-需要預測20天的股票開盤價，因此在訓練資料中以每20筆資料預測1筆的方式去做模型的訓練。
+![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/open.png?raw=true)
+
+high：
+
+![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/high.png?raw=true)
+
+low：
+
+![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/low.png?raw=true)
+
+close：
+
+![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/close.png?raw=true)
+
+### training model 
+由於股票價格有關於時間序列，所以我們選用LSTM模型。
+
 
 我們預測出的結果如下：
 
