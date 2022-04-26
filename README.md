@@ -11,23 +11,8 @@
 
 ## Method & Training
 ### Data Selection
-我們分別利用 open、high、low、close訓練出LSTM模型(一層)，最終依據結果選擇了close做為訓練的資料。
 
-open：
-
-![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/open.png?raw=true)
-
-high：
-
-![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/high.png?raw=true)
-
-low：
-
-![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/low.png?raw=true)
-
-close：
-
-![GITHUB](https://github.com/fylin625/DSAI2022_HW2-AutoTrading/blob/main/images/close.png?raw=true)
+由於close、open之間存在延遲一天的關係，因此將使用close作為模型訓練的特徵。
 
 ### training model 
 由於股票價格有關於時間序列，所以我們選用LSTM模型。
