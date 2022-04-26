@@ -4,7 +4,7 @@
 環境 Python "3.7.1"
 
 ```
-conda create -n elec_pred python=="3.7"
+conda create -n auto_trading python=="3.7"
 ```
 ```
 activate auto_trading
@@ -13,7 +13,7 @@ activate auto_trading
 ```
 conda install --yes --file requirements.txt
 ```
-將 trader.py、training.csv、testin.csv、output.csv 下載至同資料夾內
+將 trader.py、training.csv、testing.csv、output.csv 下載至同資料夾內
 
 輸入以下指令
 ```
